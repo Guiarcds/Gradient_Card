@@ -1,0 +1,38 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	background-color: #EFE9E8;
+}
+
+.hover-logo{
+	position: relative;
+	margin-top: 170px;
+	width: 320px;
+	height: 320px;
+	transform: rotate(-30deg) skew(25deg) scale(0.8);
+	/* background: rgba(0, 0, 0, 0.288); */
+	transition: 1.0s; 
+}
+
+.hover-logo:hover img:nth-child(4){
+	transform: translate(160px, -160px);
+}
+.hover-logo:hover img:nth-child(3){
+	transform: translate(120px, -120px);
+	opacity: 0.8;
+}
+.hover-logo:hover img:nth-child(2){
+	transform: translate(80px, -80px);
+	opacity: 0.6;
+}
+.hover-logo:hover img:nth-child(1){
+	transform: translate(40px, -40px);
+	opacity: 0.4;
+}
+
+.hover-logo img{
+	width: 100%;
+	position: absolute;
+	transition: 1.0s;
+}
